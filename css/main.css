@@ -6,7 +6,7 @@ html {
   box-sizing: inherit;
 
   line-height: 1.5;
-  font-family: "Merriweather", serif;
+  font-family: Merriweather, serif;
   font-style: italic;
 }
 
@@ -25,4 +25,12 @@ body {
 figure {
   padding: 0;
   margin: 0;
+}
+
+p, dt {
+  font-style: normal;
+}
+
+.temple h2 {
+  font-weight: normal;
 }
