@@ -56,14 +56,24 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 4rem 4rem;
+margin:auto;
 }
 
-.banner image {
-  background-size: cover;
+/*.banner image {
+  width: 100%;
   grid-column-start: 1;
   grid-column-end: -1;
   grid-row-start: 1;
   grid-row-end: -1;
+}*/
+
+header figure img {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-size: 100%;
 }
 
 figure {
@@ -83,5 +93,21 @@ figcaption {
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 4rem 4rem;
+  grid-template-rows: 1fr 4rem 4rem 4rem 4rem;
+  align-self: center;
+}
+
+figcaption {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.img1 img {
+  size: 14%;
+}
+
+.img1 img {
+  grid-column: 1;
+  grid-row: 1;
+  background-size: cover;
 }
