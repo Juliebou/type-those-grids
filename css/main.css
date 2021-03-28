@@ -37,25 +37,23 @@ h1 {
 }
 
 .banner h2 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
+  grid-column: 1;
+  grid-row: 2;
   z-index: 1;
-  /*color: #fff;*/
+  color: #fff;
 }
 
 .banner p {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
+  grid-column: 1;
+  grid-row: 3;
   z-index: 1;
-  /*color: #fff;*/
+  color: #fff;
 }
 
 .banner {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 4rem 4rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 4rem 4rem;
 margin:auto;
 }
 
@@ -67,13 +65,11 @@ margin:auto;
   grid-row-end: -1;
 }*/
 
-header figure img {
+.banner figure {
   width: 100%;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  background-size: 100%;
+  grid-column: 1;
+  grid-row: 1 / -1;
+  background-size: cover;
 }
 
 figure {
