@@ -59,6 +59,7 @@ h1 {
 }
 
 .banner image {
+  background-size: cover;
   grid-column-start: 1;
   grid-column-end: -1;
   grid-row-start: 1;
@@ -77,4 +78,10 @@ p, dt {
 figcaption {
   font-weight: normal;
   font-size: 1.5rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 4rem 4rem;
 }
