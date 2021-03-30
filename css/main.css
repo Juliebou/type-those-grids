@@ -16,7 +16,7 @@ body {
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
     "header"
     "main"
@@ -28,7 +28,7 @@ header {
 
 main {
   grid-area: main;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 h1 {
@@ -41,6 +41,7 @@ h1 {
   grid-row: 2;
   z-index: 1;
   color: #fff;
+  padding-left: 1rem;
 }
 
 .banner p {
@@ -48,13 +49,14 @@ h1 {
   grid-row: 3;
   z-index: 1;
   color: #fff;
+  padding-left: 1rem;
 }
 
 .banner {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 4rem 4rem;
-margin:auto;
+  margin: auto;
 }
 
 /*.banner image {
@@ -65,8 +67,17 @@ margin:auto;
   grid-row-end: -1;
 }*/
 
-.banner figure {
+.banner image {
+ padding: 1rem;
+}
+
+img {
   width: 100%;
+}
+
+.banner figure {
+  /*width: 100%;*/
+  height: auto;
   grid-column: 1;
   grid-row: 1 / -1;
   background-size: cover;
