@@ -86,18 +86,23 @@ figcaption {
   padding: 1rem;
 }
 
-.arrhba .artemis img {
-  grid-column: 1;
-  grid-row: 1;
+.arrhba {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
-.artemis img {
-  grid-column: 1;
-  grid-row: 1;
-  padding: 1rem;
-}
-
-rhode img {
+.arrhba .artemis {
   grid-column: 2;
+  grid-row: 1
+}
+
+.arrhba .rhode {
+  grid-column: 2;
+  grid-row: 1
+}
+
+.arrhba .babylon {
+  grid-column: 3;
   grid-row: 1
 }
