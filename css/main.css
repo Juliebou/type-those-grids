@@ -120,10 +120,18 @@ dl {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   margin: 0;
-  padding-top: 1rem;
+  padding-top: 14rem;
   padding-left: 1rem;
   gap: 1rem;
-  text-align: left;
+  align-self: auto;
+}
+
+dd {
+  font-style: normal;
+}
+
+dt {
+  font-style: italic;
 }
 
 dl div:first-child {
