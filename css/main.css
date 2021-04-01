@@ -19,29 +19,25 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   "header"
-  "main1"
-  "main2"
+  "main"
+  "footer"
 }
-
-/* main { */
-  /* grid-area: main; */
-/* } */
 
 .top {
   grid-area: header;
 }
 
 .arrhba {
-  grid-area: main1;
+  grid-area: main;
 }
 
 dl {
-  grid-area: main2;
+  grid-area: footer;
 }
 
 h1 {
   font-size: 1.8rem;
-  font-weight: bold;
+  font-weight: normal;
   margin: 0;
   padding: 1.5rem;
 }
@@ -57,6 +53,7 @@ h1 {
   grid-row: 2;
   z-index: 1;
   color: #fff;
+  font-weight: normal;
 padding-top: 1.5rem;
   padding-left: 1rem;
 }
@@ -94,7 +91,7 @@ figcaption {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 17rem;
   margin-left: 0;
-  gap: .75rem;
+gap: .75rem;
 }
 
 .arrhba .artemis {
@@ -119,17 +116,21 @@ figcaption {
 }
 
 dl {
-display: grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   margin: 0;
-  padding: 1rem;
-  align-self: center;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  gap: 1rem;
+  text-align: left;
 }
 
 dl div:first-child {
   grid-column: 1;
   grid-row: 1;
+  align-self: auto;
+  margin: 0;
 }
 
 dl div:nth-child(2) {
