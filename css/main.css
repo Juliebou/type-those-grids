@@ -40,7 +40,7 @@ dl {
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.5;
   font-weight: normal;
 }
 
@@ -55,6 +55,8 @@ h1 {
   grid-row: 2;
   z-index: 1;
   color: #fff;
+  font-weight: normal;
+padding-top: 1.5rem;
   padding-left: 1rem;
 }
 
