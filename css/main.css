@@ -16,10 +16,10 @@ body {
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-    "header"
-    "main"
+  "header"
+  "main"
 }
 
 header {
@@ -60,15 +60,15 @@ h1 {
 }
 
 /*.banner image {
-  width: 100%;
-  grid-column-start: 1;
-  grid-column-end: -1;
-  grid-row-start: 1;
-  grid-row-end: -1;
+width: 100%;
+grid-column-start: 1;
+grid-column-end: -1;
+grid-row-start: 1;
+grid-row-end: -1;
 }*/
 
 .banner image {
- padding: 1rem;
+  padding: 1rem;
 }
 
 img {
@@ -109,12 +109,31 @@ figcaption {
   padding: 1rem;
 }
 
-.img1 img {
-  size: 14%;
+div img {
+  gap: 0.75rem;
 }
 
-.img1 img {
+.artemis img {
+  display: grid;
+  gap: 0.75;
   grid-column: 1;
   grid-row: 1;
-  background-size: cover;
+}
+
+.artemis figcaption {
+  display: grid;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.rhodes img {
+  display: grid;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.babylon img {
+  display: grid;
+  grid-column: 3;
+  grid-row: 1;
 }
