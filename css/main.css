@@ -82,8 +82,7 @@ p, dt {
 figcaption {
   font-weight: normal;
   font-size: 1.5rem;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 0;
 }
 
 .arrhba {
@@ -94,15 +93,28 @@ figcaption {
 
 .arrhba .artemis {
   grid-column: 2;
-  grid-row: 1
+  grid-row: 1;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .arrhba .rhode {
-  grid-column: 2;
-  grid-row: 1
+  grid-column: 1;
+  grid-row: 1;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .arrhba .babylon {
   grid-column: 3;
-  grid-row: 1
+  grid-row: 1;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-self: center;
 }
