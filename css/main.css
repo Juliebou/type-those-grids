@@ -18,7 +18,7 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
   "header"
   "main"
@@ -125,7 +125,7 @@ figcaption {
 
 dl {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3 1fr);
   grid-template-rows: 1fr;
   margin: 0;
   padding-left: 1rem;
@@ -136,6 +136,7 @@ margin-top: -0.5rem;
 
 dd {
   font-style: normal;
+  color: black;
 }
 
 dt {
