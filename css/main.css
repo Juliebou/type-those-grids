@@ -11,8 +11,6 @@ html {
   box-sizing: inherit;
 }
 
-/*font-family: 'Merriweather', serif;*/
-
 body {
   padding: 0;
   margin: 0;
@@ -20,22 +18,18 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
-  "header"
-  "main"
-  "footer"
+    "header"
+    "main"
+    "footer";
 }
 
-.top {
-  grid-area: header;
-}
+/* .arrhba { */
+/* grid-area: main; */
+/* } */
 
-.arrhba {
-  grid-area: main;
-}
-
-dl {
-  grid-area: footer;
-}
+/* dl { */
+/* grid-area: footer; */
+/* } */
 
 h1 {
   font-size: 1.8rem;
@@ -45,6 +39,7 @@ h1 {
 }
 
 .top {
+  grid-area: header;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 4rem 4em;
@@ -56,7 +51,7 @@ h1 {
   z-index: 1;
   color: #fff;
   font-weight: normal;
-padding-top: 1.5rem;
+  padding-top: 1.5rem;
   padding-left: 1rem;
 }
 
@@ -81,14 +76,8 @@ p, dt {
   font-style: normal;
 }
 
-/* figcaption {
-  font-weight: normal;
-  font-size: 1.5rem;
-  margin: .5rem;
-  padding: .3rem;
-}*/
-
 .arrhba {
+  grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -124,13 +113,14 @@ figcaption {
 }
 
 dl {
+  grid-area: footer;
   display: grid;
-  grid-template-columns: repeat(3 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   margin: 0;
   padding-left: 1rem;
   gap: .75rem;
-margin-top: -0.5rem;
+  margin-top: -.5rem;
   align-self: auto;
 }
 
@@ -143,19 +133,19 @@ dt {
   font-style: italic;
 }
 
-dl div:first-child {
+.list1 {
   grid-column: 1;
   grid-row: 1;
   align-self: auto;
   margin: 0;
 }
 
-dl div:nth-child(2) {
+.list2 {
   grid-column: 2;
   grid-row: 1;
 }
 
-dl div:nth-child(3) {
+.list3 {
   grid-column: 3;
   grid-row: 1;
 }
