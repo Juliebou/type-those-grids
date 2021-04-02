@@ -89,7 +89,7 @@ figcaption {
 .arrhba {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 17rem;
+  grid-template-rows: 26rem;
   margin-left: 0;
 gap: .75rem;
 }
@@ -120,17 +120,18 @@ dl {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   margin: 0;
-  padding-top: 14rem;
+padding-top: 4rem;
   padding-left: 1rem;
   gap: 1rem;
   align-self: auto;
 }
 
-dd {
+dl > dd {
   font-style: normal;
+  align-self: center;
 }
 
-dt {
+dl > dt {
   font-style: italic;
 }
 
