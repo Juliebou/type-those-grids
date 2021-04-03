@@ -36,9 +36,14 @@ main {
   color: #fff;
   align-self: end;
   font-weight: normal;
+  padding: 1.5rem 1rem;
 }
 
 .banner-text h2 {
+  margin-bottom: 0;
+}
+
+.banner-text p {
   margin-bottom: 0;
 }
 
@@ -64,9 +69,16 @@ p {
   margin: 0 0 1.5rem;
 }
 
-
-image {
+figure {
   margin: 0;
+}
+
+figure h2 {
+  margin-bottom: 0;
+}
+
+figcaption {
+  padding: 1rem;
 }
 
 dd {
